@@ -1,0 +1,23 @@
+{
+   "name":"protege",
+   "description":"Protege is a collection of utilities written for NodeJS aimed towards use with coffee-script",
+   "version":"0.0.1",
+   "homepage":"http://github.com/Contra/protege",
+   "repository":"git://github.com/Contra/protege.git",
+   "author":"Contra <contra@australia.edu> (http://wearefractal.com/)",
+   "main":"./lib/main.coffee",
+   "preferGlobal":"true",
+   
+   "dependencies":{
+      "coffee-script":"*"
+   },
+   "engines":{
+      "node":">= 0.4.0"
+   },
+   "licenses":[
+      {
+         "type":"MIT",
+         "url":"http://github.com/Contra/protege/raw/master/LICENSE"
+      }
+   ]
+}
