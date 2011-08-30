@@ -1,3 +1,11 @@
+0.0.3 / August 30, 2011
+==================
+
+  * Added clone to Object
+  * Fixed various things
+  * Added test for Object
+  * Added test for String
+
 0.0.2 / August 29, 2011
 ==================
 

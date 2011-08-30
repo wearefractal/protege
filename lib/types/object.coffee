@@ -1,19 +1,30 @@
 module.exports =
-  isArray: -> Array.isArray @
-  isElement: -> @nodeType is 1
-  isHash: -> @ instanceof Hash
-  isBoolean: -> typeof @ is 'boolean'
-  isNumber: -> typeof @ is 'number'
-  isString: -> typeof @ is 'string'
-  isFunction: -> typeof @ is 'function'
-  isXML: -> typeof @ is 'xml'
+  isArray: (val) -> Array.isArray val
+  isElement: (val) -> val.nodeType is 1
+  #isHash: (val) -> val instanceof Hash
+  isBoolean: (val) -> typeof val is 'boolean'
+  isObject: (val) -> typeof val is 'object'
+  isNumber: (val) -> typeof val is 'number'
+  isString: (val) -> typeof val is 'string'
+  isFunction: (val) -> typeof val is 'function'
+  isXML: (val) -> typeof val is 'xml'
 
-  values: -> @[x] for x of @keys()
-  # keys: -> x for x of @ where @hasOwnProperty x
-  getKeys: (value) -> x for x of @keys() when @[x] is value
-  getValues: (key) -> x.values for x of @keys() when @[x] is key
+  getKey: -> @keys()[0]
+  getValue: -> @values()[0]
+  getKeys: (value) -> x for x in @keys() when @[x] is value
+  getValues: (key) -> @[x] for x in @keys() when x is key
+  keys: -> Object.keys @
+  values: -> @[x] for x in @keys()
 
   stringify: -> JSON.stringify @
 
+  
+  clone: () ->
+    out = {}
+    for name in Object.getOwnPropertyNames(@)
+      Object.defineProperty out, name, Object.getOwnPropertyDescriptor(@, name)
+    
+    return out
+      
 for key of module.exports
   Object.defineProperty Object.prototype, key, value: module.exports[key]

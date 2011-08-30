@@ -49,6 +49,9 @@ To install Protege, use [npm](http://github.com/isaacs/npm):
 
 ### Object
 ```
+.clone() - Duplicates the object into a new reference
+
+.isObject() - Returns true if object is an object
 .isArray() - Returns true if object is an array
 .isElement() - Returns true if object is a DOM element
 .isHash() - Returns true if object is a Hash

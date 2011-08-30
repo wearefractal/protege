@@ -22,6 +22,7 @@ module.exports =
     return @
     
   clear: -> @length = 0; @
+  
   clone: -> x for x in @
 
   merge: (val) -> 
@@ -38,7 +39,7 @@ module.exports =
   flatten: -> 
     array = []
     for x in @ 
-      if x? and x.isArray()
+      if x? and Object.isArray(x)
         array.merge x.flatten()
       else
         array.push x
