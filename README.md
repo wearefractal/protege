@@ -1,4 +1,4 @@
-**Protege is a supah wikkit sikk NodeJS coffee-script library that takes pointers from PrototypeJS and Ruby**
+**Protege is a versatile NodeJS extension library that aims to make code as simple as possible**
 
 
 ## Installation
@@ -34,34 +34,36 @@ To install Protege, use [npm](http://github.com/isaacs/npm):
 
 ### String
 ```
-.upcase() - Alias for toUpperCase()
-.downcase() - Alias for toLowerCase()
+.upcase() - Alias for toUpperCase(), inspired by Ruby syntax
+.downcase() - Alias for toLowerCase(), inspired by Ruby syntax
 
-.strip() - Alias for trim()
-.stripr() - Alias for trimRight()
-.stripl() - Alias for trimLeft()
+.strip() - Alias for trim(), inspired by Ruby syntax
+.stripr() - Alias for trimRight(), inspired by Ruby syntax
+.stripl() - Alias for trimLeft(), inspired by Ruby syntax
 
-.contains(value) - Returns true if the string contains value
-.containsIgnoreCase(value) - Returns true if the string contains value ignoring case
-.equals(value) - Returns true if the string is value
-.equalsIgnoreCase(value) - Returns true if the string equals value ignoring case
+.contains(value) - Returns true if the string contains value, inspired by Java syntax
+.containsIgnoreCase(value) - Returns true if the string contains value ignoring case, inspired by Java syntax
+.equals(value) - Returns true if the string is value, inspired by Java syntax
+.equalsIgnoreCase(value) - Returns true if the string equals value ignoring case, inspired by Java syntax
 ```
 
 ### Object
 ```
 .clone() - Duplicates the object into a new reference
 
-.isObject() - Returns true if object is an object
-.isArray() - Returns true if object is an array
-.isElement() - Returns true if object is a DOM element
-.isHash() - Returns true if object is a Hash
-.isBoolean() - Returns true if object is a boolean
-.isNumber() - Returns true if object is a number
-.isString() - Returns true if object is a string
-.isFunction() - Returns true if object is a function
-.isXML() - Returns true if object is an XML object
+Object.isObject(object) - Returns true if object is an object
+Object.isArray(object) - Returns true if object is an array
+Object.isElement(object) - Returns true if object is a DOM element
+Object.isBoolean(object) - Returns true if object is a boolean
+Object.isNumber(object) - Returns true if object is a number
+Object.isString(object) - Returns true if object is a string
+Object.isFunction(object) - Returns true if object is a function
+Object.isXML(object) - Returns true if object is an XML object
 
+.keys() - Returns all keys in the object
 .values() - Returns all values in the object
+.getKey() - Returns first key in object
+.getValue() - Returns first value in object
 .getKeys(value) - Returns all keys for the corresponding value
 .getValues(key) - Returns all values for the corresponding key
 

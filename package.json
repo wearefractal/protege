@@ -1,6 +1,6 @@
 {
    "name":"protege",
-   "description":"Protege is a collection of utilities written for NodeJS aimed towards use with coffee-script",
+   "description":"Protege is a versatile NodeJS extension library that aims to make code as simple as possible",
    "version":"0.0.3",
    "homepage":"http://github.com/Contra/protege",
    "repository":"git://github.com/Contra/protege.git",
