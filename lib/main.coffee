@@ -1,4 +1,5 @@
-require './types/object'
-require './types/string'
-require './types/array'
-require './types/json'
+module.exports =
+  object: require './types/object'
+  string: require './types/string'
+  array: require './types/array'
+  json: require './types/json'

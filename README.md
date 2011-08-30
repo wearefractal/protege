@@ -1,19 +1,73 @@
-**Protege is a supah wikkit sikk set of NodeJS utilities**
+**Protege is a supah wikkit sikk NodeJS coffee-script library that takes pointers from PrototypeJS and Ruby**
 
 
 ## Installation
     
 To install Protege, use [npm](http://github.com/isaacs/npm):
 
-    $ npm install -g protege
+        $ npm install -g protege
 
 ## Usage
 
 ```require('protege')``` - it's that easy
 
+### Array
+```
+.clone() - Duplicates the array into a new reference.
+
+.merge(arr) - Adds array arr to array
+.unique() - Returns a copy of the array with duplicates removed
+.flatten() - Returns a one-dimensional copy of the array
+.compact() - Returns a copy of the array with all undefined and null items removed
+.intersect(arr) - Returns an array of all items in both arr and the array
+
+.size() - Returns size of array
+.first() - Returns first value or array or undefined
+.last() - Returns last value or array or undefined
+
+.remove(value) - Removes first instance of value from array
+.removeAll(value) - Removes all instances of value from array.
+.removeAllIgnoreCase(value) - Removes all instances of value from array ignoring case
+.removeIndex(idx) - Removes index of idx from array
+.clear() - Removes all items from array
+```
+
+### String
+```
+.upcase() - Alias for toUpperCase()
+.downcase() - Alias for toLowerCase()
+
+.strip() - Alias for trim()
+.stripr() - Alias for trimRight()
+.stripl() - Alias for trimLeft()
+
+.contains(value) - Returns true if the string contains value
+.containsIgnoreCase(value) - Returns true if the string contains value ignoring case
+.equals(value) - Returns true if the string is value
+.equalsIgnoreCase(value) - Returns true if the string equals value ignoring case
+```
+
+### Object
+```
+.isArray() - Returns true if object is an array
+.isElement() - Returns true if object is a DOM element
+.isHash() - Returns true if object is a Hash
+.isBoolean() - Returns true if object is a boolean
+.isNumber() - Returns true if object is a number
+.isString() - Returns true if object is a string
+.isFunction() - Returns true if object is a function
+.isXML() - Returns true if object is an XML object
+
+.values() - Returns all values in the object
+.getKeys(value) - Returns all keys for the corresponding value
+.getValues(key) - Returns all values for the corresponding key
+
+.stringify() - Returns JSON string for object
+```
+
 ## Examples
 
-You can view examples in the [example folder.](https://github.com/Contra/protege/tree/master/examples)
+You can view further examples in the [example folder.](https://github.com/Contra/protege/tree/master/examples)
 
 ## Contributors
 
