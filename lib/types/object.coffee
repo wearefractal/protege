@@ -58,7 +58,7 @@ module.exports =
   unique: (merge) ->
     out = {}
     merge ?= false
-    for x of @keys()
+    for x in @keys()
       if !out.hasOwnProperty x 
         if merge
           vals = @getValues(x)
