@@ -20,7 +20,23 @@ module.exports =
       if String(x).toLowerCase() is String(val).toLowerCase()
         @removeIndex _i  
     return @
-    
+  
+  replaceIndex: (idx, val) -> 
+    if idx <= @length 
+      @splice idx, 1, val
+    return @
+   
+  replace: (val, newval) -> 
+    if @contains val
+      @splice @indexOf(val), 1, newval
+    return @
+      
+  replaceAll: (val, newval) -> 
+    for x in @ 
+      if x is val
+        @replaceIndex _i, newval
+    return @
+            
   clear: -> @length = 0; @
   
   clone: -> x for x in @

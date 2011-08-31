@@ -3,13 +3,17 @@ module.exports =
   downcase: -> @toLowerCase()
   
   startsWith: (val) -> @indexOf(val) is 0
-  endsWith: (val) -> @match(val + '$') is val
+  endsWith: (val) -> 
+    diff = @length - val.length
+    return diff >= 0 and @indexOf(val, diff) == diff
   startsWithIgnoreCase: (val) -> @downcase().indexOf(String(val).downcase()) is 0
-  endsWithIgnoreCase: (val) -> @downcase().match(String(val).downcase() + '$') is String(val).downcase()
+  endsWithIgnoreCase: (val) -> 
+    diff = @length - val.length
+    return diff >= 0 and @downcase().indexOf(val.downcase(), diff) == diff
   
   contains: (val) -> @indexOf(val) > -1
-  containsIgnoreCase: (val) -> @toLowerCase().contains String(val).toLowerCase()
-  equalsIgnoreCase: (val) -> @toLowerCase() is String(val).toLowerCase()
+  containsIgnoreCase: (val) -> @downcase().contains String(val).toLowerCase()
+  equalsIgnoreCase: (val) -> @downcase() is String(val).toLowerCase()
   
   strip: -> @trim()
   lstrip: -> @trimLeft()

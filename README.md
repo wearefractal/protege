@@ -50,6 +50,7 @@ Object.isXML(object) - Returns true if object is an XML object
 ```
 
 ### Array
+####These also apply to String (since String is just an array after all) but some are only really useful for true arrays
 ```
 .clone() - Duplicates the array into a new reference.
 
@@ -63,6 +64,9 @@ Object.isXML(object) - Returns true if object is an XML object
 .first() - Returns first value or array or undefined
 .last() - Returns last value or array or undefined
 
+.replace(value, newval) - Replaces first instance of value with newval
+.replaceIndex(index, value) - Replaces item at index with value
+.replaceAll(value, newval) - Replaces all instances of value with newval
 .remove(value) - Removes first instance of value from array
 .removeAll(value) - Removes all instances of value from array.
 .removeAllIgnoreCase(value) - Removes all instances of value from array ignoring case
