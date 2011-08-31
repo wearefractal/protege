@@ -1,9 +1,9 @@
 module.exports =
 
   isEmpty: (val) ->
-    if !val?
+    unless val?
       return false
-    else if Object.isArray val or Object.isString val
+    if Object.isArray(val) or Object.isString(val)
       return val.length is 0
     return val.keys.length is 0
         
