@@ -1,3 +1,12 @@
+0.0.4 / August 31, 2011
+==================
+
+  * Added documentation in code
+  * Added new things to Object from TODO
+  * Cleaned up code
+  * Partial revamp of readme
+  * Added more tests
+
 0.0.3 / August 30, 2011
 ==================
 

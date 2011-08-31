@@ -3,9 +3,8 @@ module.exports =
   downcase: -> @toLowerCase()
   
   contains: (val) -> @indexOf(val) > -1
-  containsIgnoreCase: (val) -> @.toLowerCase().contains String(val).toLowerCase()
-  equals: (val) -> @ is val
-  equalsIgnoreCase: (val) -> @.toLowerCase() is String(val).toLowerCase()
+  containsIgnoreCase: (val) -> @toLowerCase().contains String(val).toLowerCase()
+  equalsIgnoreCase: (val) -> @toLowerCase() is String(val).toLowerCase()
   
   strip: -> @trim()
   lstrip: -> @trimLeft()

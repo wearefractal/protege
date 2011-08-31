@@ -2,7 +2,9 @@ require '../lib/main'
 require 'colors'
 
 test = (name, str) -> 
-  console.log ('.' + name + ':').magenta, JSON.stringify(str).green
+  if !Object.isString(str)
+    str = JSON.stringify str
+  console.log ('.' + name + ':').magenta, str.green
 
 # Begin Array Tests
 friends = ['bob', 'jill', 10, 'Jill', 'tom', 'mark', undefined, null, 'jill']
@@ -28,22 +30,35 @@ test 'unique()', friends.unique()
 test 'intersect(["jill"])', friends.clone().intersect(['jill'])
 
 # Begin Object Tests
-contacts = {douchebag: 'tony', bros: ['thomas', 'bob'], hos: ['jill', 'stephanie'], family: {dad: 'mike', mom: 'tiffany', sister: 'jill'}, tool: 'tony', tool: 'tony'}
+contacts = {douchebag: 'tony', bros: ['thomas', 'bob'], hos: ['jill', 'stephanie'], family: {dad: 'mike', mom: 'tiffany', sister: 'jill'}, tool: 'tony', tool: 'tinky'}
 console.log 'Starting Protege Object tests'.red
 test 'Starting Object', contacts
 test 'typeof', typeof contacts
-test 'isArray()', [typeof temp, Object.isArray([])]
-test 'isBoolean()', [typeof temp, Object.isBoolean(true)]
-test 'isNumber()', [typeof temp, Object.isNumber(0)]
-test 'isString()', [typeof temp, Object.isString('')]
+test 'isArray()', [typeof [], Object.isArray([])]
+test 'isBoolean()', [typeof true, Object.isBoolean(true)]
+test 'isNumber()', [typeof 0, Object.isNumber(0)]
+test 'isString()', [typeof '', Object.isString('')]
 test 'isFunction()', [typeof test, Object.isFunction(test)]
-# test 'isObject()', [typeof contacts, contacts.isObject()]
+test 'isObject()', [typeof contacts, Object.isObject(contacts)]
+test 'isEmpty()', [[], Object.isEmpty([])]
+test 'isEmpty()', ['', Object.isEmpty('')]
+test 'isEmpty()', [{}, Object.isEmpty({})]
 test 'clone()', contacts.clone()
 test 'keys()', contacts.keys()
 test 'values()', contacts.values()
 test 'getKeys("tony")', contacts.getKeys('tony')
 test 'getValues("tool")', contacts.getValues('tool')
-
+test 'getKey()', contacts.getKey()
+test 'getValue()', contacts.getValue()
+test 'concat({rapper: "pdizzy"})', contacts.concat({rapper: 'pdizzy'})
+test 'merge({douchebag: "mike"})', contacts.merge({douchebag: "mike"})
+contacts.concat({rapper: 'pdizzy'})
+contacts.concat({rapper: 'pdizzy'})
+contacts.concat({rapper: 'pdizzy'})
+test 'unique()', contacts.unique()
+test 'unique(true)', contacts.unique(true)
+test 'remove("family")', contacts.remove('family')
+  
 buddy = 'Frank'
 console.log 'Starting Protege String tests'.red
 test 'Starting Object', buddy
@@ -52,6 +67,11 @@ test 'upcase()', buddy.upcase()
 test 'downcase()', buddy.downcase()
 test 'contains("rank")', buddy.contains('rank')
 test 'containsIgnoreCase("f")', buddy.containsIgnoreCase('f')
-test 'equals("Frank")', buddy.equals('Frank')
 test 'equalsIgnoreCase("frank")', buddy.equalsIgnoreCase('frank')
+  
+console.log 'Starting Protege JSON tests'.red
+test 'Starting Object', contacts
+test 'typeof', typeof contacts
+test 'prettify()', contacts.prettify()
+test 'stringify()', contacts.stringify()
 

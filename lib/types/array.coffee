@@ -39,7 +39,7 @@ module.exports =
   flatten: -> 
     array = []
     for x in @ 
-      if x? and Object.isArray(x)
+      if x? and Object.isArray x
         array.merge x.flatten()
       else
         array.push x

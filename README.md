@@ -11,6 +11,44 @@ To install Protege, use [npm](http://github.com/isaacs/npm):
 
 ```require('protege')``` - it's that easy
 
+### Object
+####These apply to all types, some are Object specific though
+```
+.clone() - Duplicates the object into a new reference
+.clear() - Removes all keys and values from the objects
+.concat(source) - Adds all properties/values from source to object. 
+        (optional) overwrite = true will overwrite existing values with source values
+.merge(source, overwrite, deep) - Merge source properties/values into object. 
+        (optional) overwrite = true will overwrite existing values with source values
+        (optional) deep = true will initiate a deep merge, merging descriptors and non-enumerable properties
+        
+.extend(source) - Alias for merge
+.unique(merge) - Returns a unique copy of the object. (optional) merge will merge values for duplicate keys into arrays instead of removing them
+
+Object.isEmpty(object) - Returns true if object is empty
+Object.isObject(object) - Returns true if object is an object
+Object.isArray(object) - Returns true if object is an array
+Object.isElement(object) - Returns true if object is a DOM element
+Object.isBoolean(object) - Returns true if object is a boolean
+Object.isNumber(object) - Returns true if object is a number
+Object.isString(object) - Returns true if object is a string
+Object.isFunction(object) - Returns true if object is a function
+Object.isXML(object) - Returns true if object is an XML object
+
+.keys() - Returns all keys in the object
+.values() - Returns all values in the object
+
+.getKey() - Returns first key in object
+.getValue() - Returns first value in object
+.getKeys(value) - Returns all keys for the corresponding value
+.getValues(key) - Returns all values for the corresponding key
+
+.remove(key) - Removes key from object
+
+.stringify() - Returns JSON string for object
+.prettify() - Returns a human readable JSON string for object
+```
+
 ### Array
 ```
 .clone() - Duplicates the array into a new reference.
@@ -29,7 +67,6 @@ To install Protege, use [npm](http://github.com/isaacs/npm):
 .removeAll(value) - Removes all instances of value from array.
 .removeAllIgnoreCase(value) - Removes all instances of value from array ignoring case
 .removeIndex(idx) - Removes index of idx from array
-.clear() - Removes all items from array
 ```
 
 ### String
@@ -43,31 +80,7 @@ To install Protege, use [npm](http://github.com/isaacs/npm):
 
 .contains(value) - Returns true if the string contains value, inspired by Java syntax
 .containsIgnoreCase(value) - Returns true if the string contains value ignoring case, inspired by Java syntax
-.equals(value) - Returns true if the string is value, inspired by Java syntax
 .equalsIgnoreCase(value) - Returns true if the string equals value ignoring case, inspired by Java syntax
-```
-
-### Object
-```
-.clone() - Duplicates the object into a new reference
-
-Object.isObject(object) - Returns true if object is an object
-Object.isArray(object) - Returns true if object is an array
-Object.isElement(object) - Returns true if object is a DOM element
-Object.isBoolean(object) - Returns true if object is a boolean
-Object.isNumber(object) - Returns true if object is a number
-Object.isString(object) - Returns true if object is a string
-Object.isFunction(object) - Returns true if object is a function
-Object.isXML(object) - Returns true if object is an XML object
-
-.keys() - Returns all keys in the object
-.values() - Returns all values in the object
-.getKey() - Returns first key in object
-.getValue() - Returns first value in object
-.getKeys(value) - Returns all keys for the corresponding value
-.getValues(key) - Returns all values for the corresponding key
-
-.stringify() - Returns JSON string for object
 ```
 
 ## Examples
