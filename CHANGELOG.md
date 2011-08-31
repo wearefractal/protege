@@ -4,6 +4,7 @@
   * Added documentation in code
   * Added new things to Object from TODO
   * Cleaned up code
+  * Added more functions to String
   * Partial revamp of readme
   * Added more tests
 

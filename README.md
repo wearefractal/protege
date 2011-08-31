@@ -78,6 +78,11 @@ Object.isXML(object) - Returns true if object is an XML object
 .stripr() - Alias for trimRight(), inspired by Ruby syntax
 .stripl() - Alias for trimLeft(), inspired by Ruby syntax
 
+.startsWith(value) - Returns true if string starts with value
+.endsWith(value) - Returns true if string ends with value
+.startsWithIgnoreCase(value) - Returns true if string starts with value ignoring case
+.endswithIgnoreCase(value) - Returns true if string ends with value ignoring case
+
 .contains(value) - Returns true if the string contains value, inspired by Java syntax
 .containsIgnoreCase(value) - Returns true if the string contains value ignoring case, inspired by Java syntax
 .equalsIgnoreCase(value) - Returns true if the string equals value ignoring case, inspired by Java syntax
