@@ -3,7 +3,7 @@ module.exports =
   downcase: -> @toLowerCase()
   
   startsWith: (val) -> @indexOf(val) is 0
-  endsWith: (val) -> @match(str + '$') is str
+  endsWith: (val) -> @match(val + '$') is val
   startsWithIgnoreCase: (val) -> @downcase().indexOf(String(val).downcase()) is 0
   endsWithIgnoreCase: (val) -> @downcase().match(String(val).downcase() + '$') is String(val).downcase()
   
