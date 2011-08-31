@@ -1,3 +1,10 @@
+0.0.5 / August 31, 2011
+==================
+
+  * Ass tons of bug fixes
+  * Project will stay at 0.0.5 for some time until a major update
+
+
 0.0.4 / August 31, 2011
 ==================
 
