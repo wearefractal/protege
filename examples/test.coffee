@@ -33,7 +33,7 @@ test 'unique()', friends.unique()
 test 'intersect(["jill"])', friends.clone().intersect(['jill'])
 
 # Begin Object Tests
-contacts = {douchebag: 'tony', bros: ['thomas', 'bob'], hos: ['jill', 'stephanie'], family: {dad: 'mike', mom: 'tiffany', sister: 'jill'}, "tool": 'tony', "tool": 'tinky'}
+contacts = {douchebag: 'tony', bros: ['thomas', 'bob'], hos: ['jill', 'stephanie'], family: {dad: 'mike', mom: 'tiffany', sister: 'jill'}, "tool": 'tony'}
 console.log 'Starting Protege Object tests'.red
 test 'Starting Object', contacts
 test 'typeof', typeof contacts
