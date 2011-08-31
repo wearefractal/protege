@@ -5,7 +5,7 @@ module.exports =
   startsWith: (val) -> @indexOf(val) is 0
   endsWith: (val) -> @match(str + '$') is str
   startsWithIgnoreCase: (val) -> @downcase().indexOf(String(val).downcase()) is 0
-  endsWithIgnoreCase: (val) -> @downcase().match(String(str).downcase() + '$') is String(str).downcase()
+  endsWithIgnoreCase: (val) -> @downcase().match(String(val).downcase() + '$') is String(val).downcase()
   
   contains: (val) -> @indexOf(val) > -1
   containsIgnoreCase: (val) -> @toLowerCase().contains String(val).toLowerCase()
