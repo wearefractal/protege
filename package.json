@@ -6,7 +6,6 @@
    "repository":"git://github.com/Contra/protege.git",
    "author":"Contra <contra@australia.edu> (http://wearefractal.com/)",
    "main":"./lib/main.coffee",
-   "preferGlobal":"true",
    
    "dependencies":{
       "coffee-script":"*",
