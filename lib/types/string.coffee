@@ -2,6 +2,12 @@ module.exports =
   upcase: -> @toUpperCase()
   downcase: -> @toLowerCase()
   
+  replaceAll: (val, newVal) ->
+    out = @
+    for x in out
+      out = out.replace val, newVal
+    return out
+      
   startsWith: (val) -> @indexOf(val) is 0
   endsWith: (val) -> 
     diff = @length - val.length
@@ -9,7 +15,7 @@ module.exports =
   startsWithIgnoreCase: (val) -> @downcase().indexOf(String(val).downcase()) is 0
   endsWithIgnoreCase: (val) -> 
     diff = @length - val.length
-    return diff >= 0 and @downcase().indexOf(val.downcase(), diff) == diff
+    return diff >= 0 and @downcase().indexOf(val.downcase(), diff) is diff
   
   contains: (val) -> @indexOf(val) > -1
   containsIgnoreCase: (val) -> @downcase().contains String(val).toLowerCase()

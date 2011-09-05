@@ -1,9 +1,14 @@
+0.0.6 / September 5, 2011
+==================
+
+  * README fix
+  * replaceAll for String
+
 0.0.5 / August 31, 2011
 ==================
 
   * Ass tons of bug fixes
   * Start of RegExp class
-  * String.escape
   * Project will stay at 0.0.5 for some time until a major update
 
 
