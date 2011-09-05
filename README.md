@@ -79,8 +79,10 @@ Object.isXML(object) - Returns true if object is an XML object
 .downcase() - Alias for toLowerCase(), inspired by Ruby syntax
 
 .strip() - Alias for trim(), inspired by Ruby syntax
-.stripr() - Alias for trimRight(), inspired by Ruby syntax
-.stripl() - Alias for trimLeft(), inspired by Ruby syntax
+.rstrip() - Alias for trimRight(), inspired by Ruby syntax
+.lstrip() - Alias for trimLeft(), inspired by Ruby syntax
+
+.replaceAll(value, newval) - Replaces all instances of value with newval
 
 .startsWith(value) - Returns true if string starts with value, inspired by Java syntax
 .endsWith(value) - Returns true if string ends with value, inspired by Java syntax
