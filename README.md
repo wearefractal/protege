@@ -96,7 +96,7 @@ Object.isXML(object) - Returns true if object is an XML object
 
 ## Examples
 
-You can view further examples in the [example folder.](https://github.com/Contra/protege/tree/master/examples)
+You can view further examples in the [example folder.](https://github.com/wearefractal/protege/tree/master/examples)
 
 ## Contributors
 
@@ -106,7 +106,7 @@ You can view further examples in the [example folder.](https://github.com/Contra
 
 (MIT License)
 
-Copyright (c) 2011 Contra <contra@australia.edu>
+Copyright (c) 2011 Fractal <contact@wearefractal.com>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

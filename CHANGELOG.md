@@ -1,12 +1,14 @@
+0.0.7 / September 5, 2011
+==================
+  * Change project ownership from Contra to Fractal
+
 0.0.6 / September 5, 2011
 ==================
-
   * README fix
   * replaceAll for String
 
 0.0.5 / August 31, 2011
 ==================
-
   * Ass tons of bug fixes
   * Start of RegExp class
   * Project will stay at 0.0.5 for some time until a major update
@@ -14,7 +16,6 @@
 
 0.0.4 / August 31, 2011
 ==================
-
   * Added documentation in code
   * Added new things to Object from TODO
   * Cleaned up code
@@ -24,7 +25,6 @@
 
 0.0.3 / August 30, 2011
 ==================
-
   * Added clone to Object
   * Fixed various things
   * Added test for Object
@@ -32,7 +32,6 @@
 
 0.0.2 / August 29, 2011
 ==================
-
   * Array library created
   * String library created
   * Object library created
@@ -40,7 +39,6 @@
 
 0.0.1 / August 28, 2011
 ==================
-
   * Start of the project
   * Barebone project layout in place
   * TODO outlined
