@@ -1,3 +1,7 @@
+0.0.8 / September 19, 2011
+==================
+  * Added function::memoize
+
 0.0.7 / September 5, 2011
 ==================
   * Change project ownership from Contra to Fractal

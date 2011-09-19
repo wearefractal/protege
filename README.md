@@ -94,6 +94,12 @@ Object.isXML(object) - Returns true if object is an XML object
 .equalsIgnoreCase(value) - Returns true if the string equals value ignoring case, inspired by Java syntax
 ```
 
+### Function
+```
+.memoize() - Caches result for parameters so any future calls will skip execution and return previous result
+        Example: var cacheFunc = myFunc.memoize(); cacheFunc(15); cacheFunc(13); cacheFunc(15); 
+        Only the first two calls will actually be executed.
+```
 ## Examples
 
 You can view further examples in the [example folder.](https://github.com/wearefractal/protege/tree/master/examples)

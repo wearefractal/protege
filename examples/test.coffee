@@ -86,3 +86,16 @@ test 'typeof', typeof contacts
 test 'prettify()', contacts.prettify()
 test 'stringify()', contacts.stringify()
 
+console.log 'Starting Protege Function tests'.red
+  
+myFunc = (argz) -> 
+  console.log argz
+  return 15
+    
+cacheFunc = myFunc.memoize()
+console.log myFunc
+test 'Starting Function', {}
+test 'typeof', typeof myFunc
+test 'cacheFunc(10)', cacheFunc 10
+test 'cacheFunc(11)', cacheFunc 11
+test 'cacheFunc(10)', cacheFunc 10
