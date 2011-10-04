@@ -1,12 +1,12 @@
 {
    "name":"protege",
    "description":"Protege is a versatile NodeJS extension library that aims to make code as simple as possible",
-   "version":"0.0.8",
+   "version":"0.0.9",
    "homepage":"http://github.com/wearefractal/protege",
    "repository":"git://github.com/wearefractal/protege.git",
    "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",
    "main":"./lib/main.coffee",
-   
+
    "dependencies":{
       "coffee-script":"*",
       "colors":"*"
@@ -21,3 +21,4 @@
       }
    ]
 }
+

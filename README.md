@@ -1,11 +1,10 @@
 **Protege is a versatile NodeJS extension library that aims to make code as simple as possible**
 
-
 ## Installation
-    
+
 To install Protege, use [npm](http://github.com/isaacs/npm):
 
-        $ npm install -g protege
+        $ npm install protege
 
 ## Usage
 
@@ -16,12 +15,12 @@ To install Protege, use [npm](http://github.com/isaacs/npm):
 ```
 .clone() - Duplicates the object into a new reference
 .clear() - Removes all keys and values from the objects
-.concat(source) - Adds all properties/values from source to object. 
+.concat(source) - Adds all properties/values from source to object.
         (optional) overwrite = true will overwrite existing values with source values
-.merge(source, overwrite, deep) - Merge source properties/values into object. 
+.merge(source, overwrite, deep) - Merge source properties/values into object.
         (optional) overwrite = true will overwrite existing values with source values
         (optional) deep = true will initiate a deep merge, merging descriptors and non-enumerable properties
-        
+
 .extend(source) - Alias for merge
 .unique(merge) - Returns a unique copy of the object. (optional) merge will merge values for duplicate keys into arrays instead of removing them
 
@@ -97,16 +96,12 @@ Object.isXML(object) - Returns true if object is an XML object
 ### Function
 ```
 .memoize() - Caches result for parameters so any future calls will skip execution and return previous result
-        Example: var cacheFunc = myFunc.memoize(); cacheFunc(15); cacheFunc(13); cacheFunc(15); 
+        Example: var cacheFunc = myFunc.memoize(); cacheFunc(15); cacheFunc(13); cacheFunc(15);
         Only the first two calls will actually be executed.
 ```
 ## Examples
 
 You can view further examples in the [example folder.](https://github.com/wearefractal/protege/tree/master/examples)
-
-## Contributors
-
-- [Contra](https://github.com/Contra)
 
 ## LICENSE
 
@@ -132,3 +127,4 @@ NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
 LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
 OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
 WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+

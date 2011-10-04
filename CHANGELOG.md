@@ -1,3 +1,7 @@
+0.0.9 / October 3, 2011
+==================
+  * JS bug fix
+
 0.0.8 / September 19, 2011
 ==================
   * Added function::memoize
@@ -46,3 +50,4 @@
   * Start of the project
   * Barebone project layout in place
   * TODO outlined
+
