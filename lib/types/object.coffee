@@ -1,5 +1,4 @@
 module.exports =
-
   isEmpty: (val) ->
     unless val?
       return false

@@ -10,6 +10,11 @@ To install Protege, use [npm](http://github.com/isaacs/npm):
 
 ```require('protege')``` - it's that easy
 
+### Global
+```
+.delay(time, fn) - Coffeescript friendly alias for setTimeout
+```
+    
 ### Object
 ####These apply to all types, some are Object specific though
 ```

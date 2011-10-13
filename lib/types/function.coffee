@@ -1,5 +1,4 @@
 module.exports =
-
   memoize: ->
     self = @
     cache = {}
