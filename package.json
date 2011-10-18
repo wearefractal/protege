@@ -1,7 +1,7 @@
 {
    "name":"protege",
    "description":"Protege is a versatile NodeJS extension library that aims to make code as simple as possible",
-   "version":"0.1.0",
+   "version":"0.1.1",
    "homepage":"http://github.com/wearefractal/protege",
    "repository":"git://github.com/wearefractal/protege.git",
    "author":"Fractal <contact@wearefractal.com> (http://wearefractal.com/)",

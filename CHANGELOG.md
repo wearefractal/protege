@@ -1,4 +1,8 @@
-0.0.10 / October 13, 2011
+0.1.1 / October 18, 2011
+==================
+  * defineProperty fix
+
+0.1.0 / October 13, 2011
 ==================
   * global.delay
 
